@@ -27,18 +27,52 @@ article {
     max-width: 50vw;
 }
 
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    article {
+        max-width: 96vw;
+    }
+    .brand {
+        width: 100px;
+    }
+    .brand a h2 {
+        display: none;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 769px) {
+    article {
+        max-width: 80vw;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    article {
+        max-width: 50vw;
+    }
+}
+
 /* NAVIGATION */
 
-.brand a h2 {
-    display: block;
-    background: url("assets/images/ehri-header.svg") no-repeat center center;
-    width: 120px;
+.brand a {
+    display: flex;
+    background: url("assets/images/ehri-header.svg") no-repeat left center;
+    width: 500px;
     height: 100px;
-    text-indent: -4000000000px;
+    text-indent: 180px;
     border-bottom: none;
     text-decoration: none;
     background-color: none;
     margin: 2em;
+    color: #3E274B;
+}
+
+.brand a h2 {
+    font-weight: normal;
+    margin-top: 1em;
+    font-size: 1.5rem;
 }
 
 nav {
@@ -48,7 +82,7 @@ nav {
 .navbar {
     display: flex;
     flex-direction: row;
-    margin: 0;
+    margin: 0 0 2rem 0;
     padding: 0;
 }
 
@@ -65,11 +99,14 @@ nav {
 
 .navbar li a {
     display: block;
+    font-size: 1.6em;
+    font-weight: bold;
     text-decoration: none;
     border-bottom: none;
     text-align: center;
     padding: 1em 3em;
     color: #3b3b3b;
+
 }
 
 .footer {
@@ -94,13 +131,13 @@ main a {
     color: #3b3b3b;
     font-weight: bold;
     text-decoration: none; /* odebrání implicitního podtržení linku */
-    background-image: linear-gradient(to bottom, transparent calc(100% - 8px), #dad7be calc(100% - 10px)); /* vytvoření podtržení pomocí pozadí */
+    background-image: linear-gradient(to bottom, transparent calc(100% - 4px), #dad7be calc(100% - 4px)); /* vytvoření podtržení pomocí pozadí */
     background-position: bottom; /* nastavení pozice pozadí na spodní okraj prvku */
     background-repeat: no-repeat; /* zabránění opakování pozadí */
-    background-size: 100% 10px; /* nastavení velikosti pozadí na 100% šířky a 2px výšky */
+    background-size: 100% 4px; /* nastavení velikosti pozadí na 100% šířky a 2px výšky */
     display: inline-block; /* nastavení prvku na blokový pro správné zobrazení pozadí */
-    padding-left: 2px;
-    padding-right: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 main a:hover {
@@ -134,16 +171,29 @@ h1 {
 }
 
 h2 {
-    font-size: 1.375rem;
+    font-size: 2.375rem;
+    color: #771646;
+    margin-top: 4rem;
 }
 
 h3 {
     font-size: 1.375rem;
+    color: #3E274B;
+    text-transform: uppercase;
+    margin-top: 4rem;
 }
 
 h4 {
-    font-size: 1.0625rem;
+    margin-top: 4rem;
+    font-size: 1.2625rem;
 }
+
+h5 {
+    margin-top: 4rem;
+    font-size: 1.2625rem;
+    border-bottom: 2px solid #dad7be;
+}
+
 
 p {
     font-family: 'Noto Serif', serif;
