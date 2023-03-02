@@ -42,9 +42,6 @@ article {
 }
 
 nav {
-}
-
-nav {
     display: flex;
     align-items: center;
 }
@@ -89,7 +86,7 @@ main {
 body {
     font-family: 'Barlow', sans-serif;
     color: #3b3b3b;
-    background: url("assets/images/doc-paper-bgd.jpg") repeat-y top center;
+    /* background: url("assets/images/doc-paper-bgd.jpg") repeat-y top center; */
     background-size: cover;
 }
 
