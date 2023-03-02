@@ -50,9 +50,17 @@ article {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     article {
+        max-width: 60vw;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1600px) {
+    article {
         max-width: 50vw;
     }
 }
+
 
 /* NAVIGATION */
 
@@ -100,12 +108,13 @@ nav {
 .navbar li a {
     display: block;
     font-size: 1.6em;
-    font-weight: bold;
+    font-weight: normal;
+    text-transform: uppercase;
     text-decoration: none;
     border-bottom: none;
     text-align: center;
     padding: 1em 3em;
-    color: #3b3b3b;
+    color: #771646;
 
 }
 
@@ -168,6 +177,7 @@ h4 {
 
 h1 {
     font-size: 3.625rem;
+    line-height: 110%;
 }
 
 h2 {
