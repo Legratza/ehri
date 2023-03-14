@@ -108,7 +108,7 @@ nav {
 .navbar li a {
     display: block;
     font-size: 1em;
-    font-weight: 600;
+    font-weight: 400;
     text-decoration: none;
     border-bottom: none;
     text-align: left;
@@ -159,14 +159,39 @@ main a:hover {
     display: inline-block; /* nastavení prvku na blokový pro správné zobrazení pozadí */
 }
 
-img.img-in-text {
-    float: right;
-    margin: 2rem 1rem;
-    width: 20vw;
-    position: relative;
-    right: -4rem;
+figure {
+    width: 100%;
+    margin: 2rem 0;
+    line-height: 1em;
+    background-color: #dad7be;
+    display: block;
+    margin-top: 0;
 }
-
+figure figcaption {
+    padding: 0.4vw 1.2vw;
+}
+figure img {
+    width: 100%;
+    margin-bottom: 0;
+}
+figure p {
+    font-size: 0.8em;
+    line-height: 1.4em;
+}
+figure h4 {
+    margin: 1vw 0;
+}
+.fig-side {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.fig-side .img-container {
+    width: 2fr;
+}
+.fig-side figcaption {
+    width: 1fr;
+    display: subgrid;
+}
 
 h1,
 h2,
@@ -230,3 +255,23 @@ sup a {
 sup a:hover {
     background-image: none;
 }
+table, td, th {  
+   border: 1px solid #3b3b3b49;
+   text-align: left;
+   vertical-align: top;
+}
+table {
+   border-collapse: collapse;
+   width: 100%;
+   margin: 4em 0;
+   font-size: 0.9rem;
+} 
+thead {
+    background-color: #dad7be;
+}
+th, td {
+   padding: 0.8vw;
+}
+tr:hover {
+   background-color: #dad7be61;
+}}
