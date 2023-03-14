@@ -1,6 +1,6 @@
 * {
     /* outline: 1px solid red; */
-	transition-duration: 0.3s;
+    transition-duration: 0.3s;
 }
 
 html,
@@ -10,7 +10,6 @@ body {
 }
 
 /* SCAFFOLD */
-
 header {
     display: flex;
     flex-direction: row;
@@ -32,9 +31,11 @@ article {
     article {
         max-width: 96vw;
     }
+
     .brand {
         width: 100px;
     }
+
     .brand a h2 {
         display: none;
     }
@@ -63,7 +64,6 @@ article {
 
 
 /* NAVIGATION */
-
 .brand a {
     display: flex;
     background: url("assets/images/ehri-header.svg") no-repeat left center;
@@ -87,6 +87,7 @@ nav {
     display: flex;
     align-items: center;
 }
+
 .navbar {
     display: flex;
     flex-direction: row;
@@ -128,7 +129,6 @@ main {
 }
 
 /* DESIGN */
-
 body {
     font-family: 'Barlow', sans-serif;
     color: #3b3b3b;
@@ -139,58 +139,24 @@ body {
 main a {
     color: #3b3b3b;
     font-weight: bold;
-    text-decoration: none; /* odebrání implicitního podtržení linku */
-    background-image: linear-gradient(to bottom, transparent calc(100% - 4px), #dad7be calc(100% - 4px)); /* vytvoření podtržení pomocí pozadí */
-    background-position: bottom; /* nastavení pozice pozadí na spodní okraj prvku */
-    background-repeat: no-repeat; /* zabránění opakování pozadí */
-    background-size: 100% 4px; /* nastavení velikosti pozadí na 100% šířky a 2px výšky */
-    display: inline-block; /* nastavení prvku na blokový pro správné zobrazení pozadí */
+    text-decoration: none;
+    background-image: linear-gradient(to bottom, transparent calc(100% - 4px), #dad7be calc(100% - 4px));
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 4px;
+    display: inline-block;
     padding-left: 4px;
     padding-right: 4px;
 }
 
 main a:hover {
     color: #771646;
-    text-decoration: none; /* odebrání implicitního podtržení linku */
-    background-image: linear-gradient(to bottom, #dad7be calc(100% - 8px), #dad7be calc(100% - 8px)); /* vytvoření podtržení pomocí pozadí */
-    background-position: bottom; /* nastavení pozice pozadí na spodní okraj prvku */
-    background-repeat: no-repeat; /* zabránění opakování pozadí */
-    background-size: 100% 100%; /* nastavení velikosti pozadí na 100% šířky a 2px výšky */
-    display: inline-block; /* nastavení prvku na blokový pro správné zobrazení pozadí */
-}
-
-figure {
-    width: 100%;
-    margin: 2rem 0;
-    line-height: 1em;
-    background-color: #dad7be;
-    display: block;
-    margin-top: 0;
-}
-figure figcaption {
-    padding: 0.4vw 1.2vw;
-}
-figure img {
-    width: 100%;
-    margin-bottom: 0;
-}
-figure p {
-    font-size: 0.8em;
-    line-height: 1.4em;
-}
-figure h4 {
-    margin: 1vw 0;
-}
-.fig-side {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-}
-.fig-side .img-container {
-    width: 2fr;
-}
-.fig-side figcaption {
-    width: 1fr;
-    display: subgrid;
+    text-decoration: none;
+    background-image: linear-gradient(to bottom, #dad7be calc(100% - 8px), #dad7be calc(100% - 8px));
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
 }
 
 h1,
@@ -226,9 +192,9 @@ h4 {
 h5 {
     margin-top: 4rem;
     font-size: 1.2625rem;
+    padding-bottom: 0.4em;
     border-bottom: 2px solid #dad7be;
 }
-
 
 p {
     font-family: 'Noto Serif', serif;
@@ -236,6 +202,16 @@ p {
     margin-bottom: 1rem;
     font-size: 1.0625rem;
     line-height: 1.8rem;
+}
+
+q {
+    display: block;
+    font-family: 'Noto Serif', serif;
+    line-height: 1.6em;
+    padding: 2vw;
+    margin-bottom: 2vw;
+    color: #771646;
+    border-left: 4px solid #dad7be;
 }
 
 sup {
@@ -248,30 +224,80 @@ sup a {
     font-family: 'Barlow', sans-serif;
     font-weight: bold;
     color: #771646;
-    text-decoration: none;;
+    text-decoration: none;
+    ;
     background-image: none;
 }
 
 sup a:hover {
     background-image: none;
 }
-table, td, th {  
-   border: 1px solid #3b3b3b49;
-   text-align: left;
-   vertical-align: top;
+
+figure {
+    width: 100%;
+    margin: 2rem 0;
+    line-height: 1em;
+    background-color: #dad7be;
+    display: block;
+    margin-top: 0;
 }
+
+figure figcaption {
+    padding: 0.4vw 1.2vw;
+}
+
+figure img {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+figure p {
+    font-size: 0.8em;
+    line-height: 1.4em;
+}
+
+figure h4 {
+    margin: 1vw 0;
+}
+
+.fig-side {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.fig-side .img-container {
+    width: 2fr;
+}
+
+.fig-side figcaption {
+    width: 1fr;
+    display: subgrid;
+}
+
+table,
+td,
+th {
+    border: 1px solid #8f8f8f;
+    text-align: left;
+    vertical-align: top;
+}
+
 table {
-   border-collapse: collapse;
-   width: 100%;
-   margin: 4em 0;
-   font-size: 0.9rem;
-} 
+    border-collapse: collapse;
+    width: 100%;
+    margin: 4em 0;
+    font-size: 0.9rem;
+}
+
 thead {
     background-color: #dad7be;
 }
-th, td {
-   padding: 0.8vw;
+
+th,
+td {
+    padding: 0.8vw 1vw;
 }
+
 tr:hover {
-   background-color: #dad7be61;
-}}
+    background-color: #dad7be5c;
+}
