@@ -2,6 +2,9 @@
     /* outline: 1px solid red; */
     transition-duration: 0.3s;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 html,
 body {
@@ -78,7 +81,7 @@ article {
 }
 
 .brand a h2 {
-    font-weight: normal;
+    font-weight: 500;
     margin-top: 1em;
     font-size: 1.5rem;
 }
@@ -108,8 +111,8 @@ nav {
 
 .navbar li a {
     display: block;
-    font-size: 1em;
-    font-weight: 400;
+    font-size: 1.04em;
+    font-weight: 500;
     text-decoration: none;
     border-bottom: none;
     text-align: left;
@@ -187,13 +190,14 @@ h3 {
 h4 {
     margin-top: 4rem;
     font-size: 1.2625rem;
+    color: #771646;
+    border-top: 4px solid #771646;
+    padding-top: 0.4em;
 }
 
 h5 {
     margin-top: 4rem;
     font-size: 1.2625rem;
-    padding-bottom: 0.4em;
-    border-bottom: 2px solid #dad7be;
 }
 
 p {
@@ -256,7 +260,8 @@ figure p {
     line-height: 1.4em;
 }
 
-figure h4 {
+figure h4,
+figure h5 {
     margin: 1vw 0;
 }
 
@@ -301,3 +306,23 @@ td {
 tr:hover {
     background-color: #dad7be5c;
 }
+
+.endnotes {
+    color: #771646;
+    margin-top: 2em;
+    padding-top: 2em;
+    border-top: 2px solid #dad7be;
+}
+.endnotes ol {
+    text-align: left;
+    padding: 1em;
+}
+.endnotes ol li::marker {
+    text-align: left;
+}
+.endnotes ol li {
+    margin: 0;
+    margin-bottom: 1em;
+    padding: 0;
+    padding-left: 2em;
+}    
